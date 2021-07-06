@@ -13,7 +13,7 @@ pipeline{
              steps{
                 withCredentials([string(credentialsId: 'dhubpass', variable: 'pass')]) {
                    sh "docker login -u 966145 -p ${pass}"
-                   sh "docker push 966145/testweb:v1"
+                   sh "docker push 966145/testweb:${BUILD_TAG}"
 
 }
                 
