@@ -25,7 +25,7 @@ pipeline{
 
 
 def gettag(){
-           def tag = sh script: 'git rev-parse HEAD', returnstdout: true
+           def tag = sh script: 'git rev-parse HEAD', returnStdout: true
            return tag
 
 }
